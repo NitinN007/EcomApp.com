@@ -1,0 +1,18 @@
+# IDE and editor directories
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# Backend node_modules
+/backend/node_modules
+
+# Frontend node_modules
+/frontend/node_modules
+
+# Environment variables
+/backend/.env
