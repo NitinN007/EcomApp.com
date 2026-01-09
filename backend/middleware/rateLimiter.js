@@ -6,4 +6,5 @@ exports.apiLimiter = rateLimit({
     standardHeaders: true,
     legacyHeaders: false,
     message: "Too many requests, try again later",
+
 });
