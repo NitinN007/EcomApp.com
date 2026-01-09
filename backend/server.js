@@ -2,14 +2,14 @@ const express = require("express");
 const dotenv = require("dotenv");
 const connectDB = require("./config/db");
 const cors = require("cors");
-const { apiLimiter } = require("./middleware/rateLimiter");
+const { rateLimiter } = require("./middleware/rateLimiter");
 dotenv.config();
 connectDB();
 
 const app = express();
 app.use(express.json());
 app.use(cors());
-app.use(apiLimiter);
+app.use(rateLimiter);
 app.get("/", (req, res) => {
   res.send("API is running...");
 });
