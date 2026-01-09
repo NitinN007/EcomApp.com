@@ -10,8 +10,8 @@ const verifyAdmin = async () => {
     await mongoose.connect(process.env.MONGO_URI);
     console.log("✅ MongoDB Connected\n");
 
-    const email = "www.hypernitin@gmail.com";
-    const password = "RealNitin@07";
+    const email = "admin123@gmail.com";
+    const password = "admin@123";
 
     // Find user
     const user = await User.findOne({ email: email.toLowerCase().trim() });
